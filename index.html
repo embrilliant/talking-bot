@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Robot</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="sessWrap">
+            <span id="session" class="pending">
+                Chat session pending
+            </span>
+            <p>(Please speak something.)</p>
+        </div>
+
+        <form>
+            <input id="userText" type="text" name="text">
+            <br><br>
+            <button id="click" type="submit">Send</button> [You can also press Enter or just speak.]
+        </form>
+
+        <p id="resultMsg">&nbsp;</p>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="cases.js"></script>
+    <script type="text/javascript" src="Robot.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
