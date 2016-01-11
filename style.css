@@ -17,7 +17,7 @@ body {
 }
 
 form {
-	visibility: hidden;
+	visibility: visible;
 }
 
 input {
