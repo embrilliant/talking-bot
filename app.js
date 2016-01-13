@@ -28,14 +28,14 @@ $(function() {
 
             recognition.onstart = function( event ) {
                 $("#session").text("Chat session started");
-                $("#session").attr("class", "started");
+                $("#session").attr("class", "sessStatus started");
                 console.log( "recognition started." );
             };
 
             recognition.onend = function() {
                 console.log("recognition ended.");
                 $("#session").text("Chat session ended");
-                $("#session").attr("class", "ended");
+                $("#session").attr("class", "sessStatus ended");
                 // document.getElementById("session").className = "ended";
                 $("#sessWrap p").text("");
             };

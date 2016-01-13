@@ -14,7 +14,7 @@ var cases = {
 			"what i said": "I understand.",
 			"why": "You will find out why.",
 			"like": "I like most things.",
-			"hi": "Hello.",
+			" hi": "Hello.",
 			"hello": "Hi.",
 			"marry": ":)",
 			"bye": "Bye.",
