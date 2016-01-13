@@ -18,6 +18,8 @@ var cases = {
 			"hello": "Hi.",
 			"marry": ":)",
 			"bye": "Bye.",
+			"cool": "Cool stuff.",
+			"awesome": "Awesome.",
 			"yourself": "You will find out more about me by yourself.",
 			"emily": "I am made by Emily.",
 			"good": "Sounds good.",
