@@ -3,7 +3,7 @@
 ###### A robot that will chat with you.
 
 ## Instruction
-Please speak to the browser directly, and then it will speak bacj to you.
+Please speak to the browser directly, and then it will speak back to you.
 
 ## Compatibility
 Currently, it works on the latest Chrome browser and works the best when the lapton is connected to a headphone or speakers. 
