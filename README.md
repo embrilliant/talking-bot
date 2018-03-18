@@ -18,4 +18,4 @@ Linux might not have a voice.
     - Plain JavaScript
 
 ## Demo
-[Live Demo](http://digitaleverything.net/demos/robot/)
+[Live Demo](https://www.digitaleverything.net/demos/robot/)

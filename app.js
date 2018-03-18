@@ -8,6 +8,8 @@ function chat( userInput ) {
 
     var msg = new SpeechSynthesisUtterance( robot.getResponse() );
     window.speechSynthesis.speak(msg);
+
+    document.querySelector("input").value = "";
 }
 
 function speech() {
@@ -89,16 +91,23 @@ var SessionBox = React.createClass({
 	});
 
 var FormBox = React.createClass({
+    getInitialState: function() {
+      return {userTextInput: ""};
+    },
 
     handleUserTextInputChange: function(e) {
         this.setState( {userTextInput: e.target.value} );
     },
 
     handleSubmit: function(e) {
-		e.preventDefault();
-		var userTextInput = this.state.userTextInput;
-		chat( userTextInput );
-		this.setState( {userTextInput: ""} );
+      var userTextInput = "";
+      e.preventDefault();
+
+      if (this.state.userTextInput !== "") {
+        userTextInput = this.state.userTextInput;
+        chat( userTextInput );
+        this.setState( {userTextInput: ""} ); 
+      }
     },
 
 	render: function() {
@@ -109,7 +118,7 @@ var FormBox = React.createClass({
 		    <br />
 		    <button type="submit" className="sendButton">
 				Send 
-			</button>
+			 </button>
 			[You can also press Enter or just speak]
 		  </form>
 		);
